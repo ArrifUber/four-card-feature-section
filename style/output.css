@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.text-preset-2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-smaller {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-smaller {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+@media (min-width: 1440px) {
+  html {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-preset-1 {
+    font-family: "Poppins";
+    font-weight: 200;
+    font-size: 34px;
+    line-height: 100%;
+  }
+  .text-preset-2 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+}
+.text-preset-3 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-smaller {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 32px;
+  gap: 48px;
+}
+@media (min-width: 1440px) {
+  main {
+    padding: 0 0 4rem 0;
+    gap: 62px;
+  }
+}
+main .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+main .text-container .title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+main .text-container .title h1 {
+  color: hsl(212, 6%, 44%);
+}
+main .text-container .title h2 {
+  color: hsl(234, 12%, 34%);
+}
+@media (min-width: 1440px) {
+  main .text-container .text {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+main .text-container .text p {
+  color: hsl(234, 12%, 34%);
+}
+main .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (min-width: 1440px) {
+  main .card-container {
+    align-items: center;
+    flex-direction: row;
+  }
+  main .card-container section {
+    width: 325px;
+  }
+  main .card-container .supervisor {
+    grid-area: left;
+  }
+  main .card-container .team-builder {
+    grid-area: center;
+  }
+  main .card-container .karma {
+    grid-area: bottom;
+  }
+  main .card-container .calculator {
+    grid-area: right;
+  }
+}
+main .card-container .center {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+main .card-container section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 4px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 24px 32px 40px 32px;
+}
+main .card-container section h2 {
+  color: hsl(234, 12%, 34%);
+}
+main .card-container section p {
+  color: hsl(212, 6%, 44%);
+  padding-bottom: 24px;
+}
+main .card-container section img {
+  width: 55px;
+  height: 55px;
+  align-self: flex-end;
+}
+main .card-container section.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+main .card-container section.team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+main .card-container section.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+main .card-container section.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/*# sourceMappingURL=output.css.map */

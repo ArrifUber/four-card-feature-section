@@ -1,0 +1,199 @@
+$color-primary-red: hsl(0, 78%, 62%);
+$color-primary-cyan: hsl(180, 62%, 55%);
+$color-primary-orange: hsl(34, 97%, 64%);
+$color-primary-blue: hsl(212, 86%, 64%);
+
+$color-neutral-grey-500: hsl(234, 12%, 34%);
+$color-neutral-grey-400: hsl(212, 6%, 44%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+$font-size: 15px;
+
+$spacing-650: 52px;
+$spacing-600: 48px;
+$spacing-550: 44px;
+$spacing-500: 40px;
+$spacing-400: 32px;
+$spacing-350: 28px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-150: 12px;
+$spacing-100: 8px;
+$spacing-50: 4px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-preset-1 {
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 100%;
+}
+.text-preset-2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.text-preset-2-smaller {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.text-preset-3 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+.text-preset-3-smaller {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+@media (min-width: 1440px) {
+    html{
+        height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-preset-1 {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 34px;
+        line-height: 100%;
+      }
+      .text-preset-2 {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 150%;
+        letter-spacing: 0px;
+      }
+    }
+    .text-preset-3 {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0px;
+    }
+    .text-preset-3-smaller {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 0px;    
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem $spacing-400;
+  gap: $spacing-600;
+  @media (min-width: 1440px) {
+    padding: 0 0 4rem 0;
+    gap: 62px;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: $spacing-200;
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-50;
+      h1 {
+        color: $color-neutral-grey-400;
+      }
+      h2 {
+        color: $color-neutral-grey-500;
+      }
+    }
+    .text {
+      @media (min-width: 1440px) {
+        width: 500px;
+        max-width: 500px;
+      }
+      p {
+        color: $color-neutral-grey-500;
+      }
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-400;
+    @media (min-width: 1440px) {
+        align-items: center;
+        flex-direction: row;
+        section{
+            width: 325px;
+        }
+      .supervisor{
+        grid-area: left;
+      }
+      .team-builder{
+        grid-area: center;
+      }
+      .karma{
+        grid-area: bottom;
+      }
+      .calculator{
+        grid-area: right;
+      }
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-400
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-50;
+      border-top: 4px solid black;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      padding: $spacing-300 $spacing-400 $spacing-500 $spacing-400;
+      h2 {
+        color: $color-neutral-grey-500;
+      }
+      p {
+        color: $color-neutral-grey-400;
+        padding-bottom: $spacing-300;
+      }
+      img {
+        width: 55px;
+        height: 55px;
+        align-self: flex-end;
+      }
+    }
+    section.supervisor {
+      border-top: 4px solid $color-primary-cyan;
+    }
+    section.team-builder {
+      border-top: 4px solid $color-primary-red;
+    }
+    section.karma {
+      border-top: 4px solid $color-primary-orange;
+    }
+    section.calculator {
+      border-top: 4px solid $color-primary-blue;
+    }
+  }
+}
